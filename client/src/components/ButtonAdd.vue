@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-        <b-button v-b-modal.modal-1 class="bg-primary mt-3 ml-3 shadow">
+        <b-button v-b-modal.modal-1 class="bg-dark mt-3 ml-3 shadow">
             <img src="../assets/plus.svg" alt="">
             Add New Task
         </b-button>

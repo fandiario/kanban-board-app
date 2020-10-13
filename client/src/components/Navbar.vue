@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <div>
-                <b-dropdown id="dropdown-1" class="m-md-2" variant="primary">
+                <b-dropdown id="dropdown-1" class="m-md-2" variant="dark">
                     <template v-slot:button-content>
                         <b-icon icon="person-fill" aria-hidden="true"></b-icon> User
                     </template>
@@ -16,8 +16,8 @@
                     </b-dropdown-item>
                     <b-dropdown-divider></b-dropdown-divider>
                     <b-dropdown-item>
-                        <b-icon icon="x-circle-fill" aria-hidden="true"></b-icon> 
-                        Log Out
+                        <b-icon icon="x-circle-fill" aria-hidden="true" ></b-icon> 
+                        <a @:click.prevent="logout" href="#" class="text-dark">Log Out</a>
                     </b-dropdown-item>
                 </b-dropdown>
             </div>
@@ -37,7 +37,13 @@
 
 <script>
 export default {
-    name: 'Navbar'
+    name: 'Navbar',
+    methods: {
+        logout() {
+            localStorage.clear ()
+            this.$emit ('logoutSubmit', 'loginPage')
+        }
+    }
 }
 </script>
 

@@ -1,6 +1,9 @@
 <template>
   <div>
-      <Navbar></Navbar>
+      <Navbar
+      @logoutSubmit = 'logoutSubmit'
+      v-if="currentPage !== 'loginPage' || currentPage !== 'registerPage'">
+      </Navbar>
       <ButtonAdd></ButtonAdd>
       <div class="row">
         <CardCategory 
@@ -20,12 +23,23 @@ import CardCategory from '../components/CardCategory'
 import ButtonAdd from '../components/ButtonAdd'
 export default {
     name: 'DashboardPage',
+    data () {
+      return {
+        currentPage: 'dashboardPage'
+      }
+    },
     props: ['tasksData', 'categoriesData'],
     components: {
       CardTask,
       Navbar,
       CardCategory,
       ButtonAdd
+    },
+    methods: {
+      logoutSubmit (payload) {
+        localStorage.clear ()
+        this.$emit ("logoutSubmit", payload)
+      }
     }
 }
 </script>

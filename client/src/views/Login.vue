@@ -2,8 +2,8 @@
   <div class="container">
       <div class="row">
           <div class="col-5 mx-auto mt-5">
-              <h4 class="mb-3 text-primary">Kanban Board App</h4>
-              <div class="card shadow" style="width: 18rem;">
+              <h4 class="mb-3 text-dark">Kanban Board App</h4>
+              <div class="card shadow " style="width: 18rem;">
                   <img src="../assets/login.svg" class="card-img-top" alt="">
                 <div class="card-body">
                     <h5 class="card-title">LOGIN</h5>

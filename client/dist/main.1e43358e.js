@@ -10732,14 +10732,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $37d5f2 = exports.default || module.exports;
+        var $c813d8 = exports.default || module.exports;
       
-      if (typeof $37d5f2 === 'function') {
-        $37d5f2 = $37d5f2.options;
+      if (typeof $c813d8 === 'function') {
+        $c813d8 = $c813d8.options;
       }
     
         /* template */
-        Object.assign($37d5f2, (function () {
+        Object.assign($c813d8, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -10747,13 +10747,13 @@ exports.default = _default;
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-5 mx-auto mt-5" }, [
-        _c("h4", { staticClass: "mb-3 text-primary" }, [
+        _c("h4", { staticClass: "mb-3 text-dark" }, [
           _vm._v("Kanban Board App")
         ]),
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "card shadow", staticStyle: { width: "18rem" } },
+          { staticClass: "card shadow ", staticStyle: { width: "18rem" } },
           [
             _c("img", {
               staticClass: "card-img-top",
@@ -10898,9 +10898,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$37d5f2', $37d5f2);
+            api.createRecord('$c813d8', $c813d8);
           } else {
-            api.reload('$37d5f2', $37d5f2);
+            api.reload('$c813d8', $c813d8);
           }
         }
 
@@ -10969,14 +10969,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $3c836c = exports.default || module.exports;
+        var $a5079b = exports.default || module.exports;
       
-      if (typeof $3c836c === 'function') {
-        $3c836c = $3c836c.options;
+      if (typeof $a5079b === 'function') {
+        $a5079b = $a5079b.options;
       }
     
         /* template */
-        Object.assign($3c836c, (function () {
+        Object.assign($a5079b, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11135,9 +11135,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$3c836c', $3c836c);
+            api.createRecord('$a5079b', $a5079b);
           } else {
-            api.reload('$3c836c', $3c836c);
+            api.reload('$a5079b', $a5079b);
           }
         }
 
@@ -11148,7 +11148,7 @@ render._withStripped = true
       
       }
     })();
-},{"./..\\assets\\authentication.svg":[["authentication.877f6b60.svg","src/assets/authentication.svg"],"src/assets/authentication.svg"],"_css_loader":"C:/Users/Fandi Ario/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/CardTask.vue":[function(require,module,exports) {
+},{"./..\\assets\\authentication.svg":[["authentication.877f6b60.svg","src/assets/authentication.svg"],"src/assets/authentication.svg"],"_css_loader":"C:/Users/Fandi Ario/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/FormEditTask.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11171,19 +11171,278 @@ exports.default = void 0;
 //
 //
 //
+//
+//
 var _default = {
-  name: 'CardTask',
-  props: ['task']
+  name: 'FormEditTask'
 };
 exports.default = _default;
-        var $f07445 = exports.default || module.exports;
+        var $0de7a3 = exports.default || module.exports;
       
-      if (typeof $f07445 === 'function') {
-        $f07445 = $f07445.options;
+      if (typeof $0de7a3 === 'function') {
+        $0de7a3 = $0de7a3.options;
       }
     
         /* template */
-        Object.assign($f07445, (function () {
+        Object.assign($0de7a3, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c(
+        "b-modal",
+        { attrs: { id: "modal-2", title: "Edit Task", "hide-footer": "" } },
+        [
+          _c("form", [
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", { attrs: { for: "titleTask" } }, [_vm._v("Title")]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", id: "editTitleTask" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", { attrs: { for: "descriptionTask" } }, [
+                _vm._v("Description")
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", id: "editDescriptionTask" }
+              })
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+              [_vm._v("Edit")]
+            )
+          ])
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$0de7a3', $0de7a3);
+          } else {
+            api.reload('$0de7a3', $0de7a3);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"C:/Users/Fandi Ario/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/FormMoveTask.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: 'FormMoveTask'
+};
+exports.default = _default;
+        var $e2cc1d = exports.default || module.exports;
+      
+      if (typeof $e2cc1d === 'function') {
+        $e2cc1d = $e2cc1d.options;
+      }
+    
+        /* template */
+        Object.assign($e2cc1d, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c(
+        "b-modal",
+        { attrs: { id: "modal-3", title: "Move Task", "hide-footer": "" } },
+        [
+          _c("form", [
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", { attrs: { for: "descriptionTask" } }, [
+                _vm._v("Move to where ?")
+              ]),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  staticClass: "form-control",
+                  attrs: { id: "moveDescriptionTask" }
+                },
+                [
+                  _c("option", [_vm._v("---Category---")]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "backlog" } }, [
+                    _vm._v("backlog")
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "todo" } }, [_vm._v("todo")]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "ongoing" } }, [
+                    _vm._v("ongoing")
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "done" } }, [_vm._v("done")])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+              [_vm._v("Move")]
+            )
+          ])
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$e2cc1d', $e2cc1d);
+          } else {
+            api.reload('$e2cc1d', $e2cc1d);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"C:/Users/Fandi Ario/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/CardTask.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _FormEditTask = _interopRequireDefault(require("../components/FormEditTask"));
+
+var _FormMoveTask = _interopRequireDefault(require("../components/FormMoveTask"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: 'CardTask',
+  components: {
+    FormEditTask: _FormEditTask.default,
+    FormMoveTask: _FormMoveTask.default
+  },
+  props: ['task']
+};
+exports.default = _default;
+        var $62a7fd = exports.default || module.exports;
+      
+      if (typeof $62a7fd === 'function') {
+        $62a7fd = $62a7fd.options;
+      }
+    
+        /* template */
+        Object.assign($62a7fd, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11192,54 +11451,88 @@ exports.default = _default;
     _c(
       "div",
       {
-        staticClass: "card mb-3 shadow",
+        staticClass: "card mb-3 shadow bg-warning",
         staticStyle: { "max-width": "18rem" }
       },
       [
-        _vm._m(0),
+        _c(
+          "div",
+          { staticClass: "card-header" },
+          [
+            _c(
+              "b-button",
+              {
+                directives: [
+                  {
+                    name: "b-modal",
+                    rawName: "v-b-modal.modal-3",
+                    modifiers: { "modal-3": true }
+                  }
+                ],
+                staticClass: "bg-primary mr-2 mb-2 shadow"
+              },
+              [
+                _c("img", {
+                  attrs: {
+                    src: "/move.84c1824a.svg",
+                    alt: ""
+                  }
+                }),
+                _vm._v("\n            Move\n          ")
+              ]
+            ),
+            _vm._v(" "),
+            _c("FormMoveTask")
+          ],
+          1
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("h5", { staticClass: "card-title text-dark" }, [
-            _vm._v(_vm._s(_vm.task.title))
-          ]),
-          _vm._v(" "),
-          _c("h6", { staticClass: "card-subtitle mb-2 text-dark" }, [
-            _vm._v(_vm._s(_vm.task.description))
-          ]),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _vm._m(2)
-        ])
+        _c(
+          "div",
+          { staticClass: "card-body" },
+          [
+            _c("h5", { staticClass: "card-title text-dark" }, [
+              _vm._v(_vm._s(_vm.task.title))
+            ]),
+            _vm._v(" "),
+            _c("h6", { staticClass: "card-subtitle mb-2 text-dark" }, [
+              _vm._v(_vm._s(_vm.task.description))
+            ]),
+            _vm._v(" "),
+            _c(
+              "b-button",
+              {
+                directives: [
+                  {
+                    name: "b-modal",
+                    rawName: "v-b-modal.modal-2",
+                    modifiers: { "modal-2": true }
+                  }
+                ],
+                staticClass: "bg-primary mr-2 mb-2 shadow"
+              },
+              [
+                _c("img", {
+                  attrs: {
+                    src: "/edit.98ea1e81.svg",
+                    alt: ""
+                  }
+                }),
+                _vm._v("\n            Edit\n          ")
+              ]
+            ),
+            _vm._v(" "),
+            _c("FormEditTask"),
+            _vm._v(" "),
+            _vm._m(0)
+          ],
+          1
+        )
       ]
     )
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("a", { staticClass: "btn btn-primary", attrs: { href: "#" } }, [
-        _c("img", {
-          attrs: { src: "/move.84c1824a.svg", alt: "" }
-        }),
-        _vm._v(" Move")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { staticClass: "btn btn-primary", attrs: { href: "#" } }, [
-      _c("img", {
-        attrs: { src: "/edit.98ea1e81.svg", alt: "" }
-      }),
-      _vm._v(" Edit")
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -11271,9 +11564,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$f07445', $f07445);
+            api.createRecord('$62a7fd', $62a7fd);
           } else {
-            api.reload('$f07445', $f07445);
+            api.reload('$62a7fd', $62a7fd);
           }
         }
 
@@ -11284,7 +11577,7 @@ render._withStripped = true
       
       }
     })();
-},{"./..\\assets\\move.svg":[["move.84c1824a.svg","src/assets/move.svg"],"src/assets/move.svg"],"./..\\assets\\edit.svg":[["edit.98ea1e81.svg","src/assets/edit.svg"],"src/assets/edit.svg"],"./..\\assets\\trash-2.svg":[["trash-2.ec4424d1.svg","src/assets/trash-2.svg"],"src/assets/trash-2.svg"],"_css_loader":"C:/Users/Fandi Ario/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/Navbar.vue":[function(require,module,exports) {
+},{"../components/FormEditTask":"src/components/FormEditTask.vue","../components/FormMoveTask":"src/components/FormMoveTask.vue","./..\\assets\\move.svg":[["move.84c1824a.svg","src/assets/move.svg"],"src/assets/move.svg"],"./..\\assets\\edit.svg":[["edit.98ea1e81.svg","src/assets/edit.svg"],"src/assets/edit.svg"],"./..\\assets\\trash-2.svg":[["trash-2.ec4424d1.svg","src/assets/trash-2.svg"],"src/assets/trash-2.svg"],"_css_loader":"C:/Users/Fandi Ario/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/components/Navbar.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11329,24 +11622,30 @@ exports.default = void 0;
 //
 //
 var _default = {
-  name: 'Navbar'
+  name: 'Navbar',
+  methods: {
+    logout: function logout() {
+      localStorage.clear();
+      this.$emit('logoutSubmit', 'loginPage');
+    }
+  }
 };
 exports.default = _default;
-        var $58f6dd = exports.default || module.exports;
+        var $f49f54 = exports.default || module.exports;
       
-      if (typeof $58f6dd === 'function') {
-        $58f6dd = $58f6dd.options;
+      if (typeof $f49f54 === 'function') {
+        $f49f54 = $f49f54.options;
       }
     
         /* template */
-        Object.assign($58f6dd, (function () {
+        Object.assign($f49f54, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
     "nav",
-    { staticClass: "navbar navbar-expand-md navbar-dark bg-primary" },
+    { staticClass: "navbar navbar-expand-md navbar-dark bg-dark" },
     [
       _c(
         "div",
@@ -11362,7 +11661,7 @@ exports.default = _default;
                 "b-dropdown",
                 {
                   staticClass: "m-md-2",
-                  attrs: { id: "dropdown-1", variant: "primary" },
+                  attrs: { id: "dropdown-1", variant: "dark" },
                   scopedSlots: _vm._u([
                     {
                       key: "button-content",
@@ -11417,8 +11716,20 @@ exports.default = _default;
                       _c("b-icon", {
                         attrs: { icon: "x-circle-fill", "aria-hidden": "true" }
                       }),
-                      _vm._v(
-                        " \n                        Log Out\n                    "
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass: "text-dark",
+                          attrs: { href: "#" },
+                          on: {
+                            ":click": function($event) {
+                              $event.preventDefault()
+                              return _vm.logout($event)
+                            }
+                          }
+                        },
+                        [_vm._v("Log Out")]
                       )
                     ],
                     1
@@ -11492,9 +11803,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$58f6dd', $58f6dd);
+            api.createRecord('$f49f54', $f49f54);
           } else {
-            api.reload('$58f6dd', $58f6dd);
+            api.reload('$f49f54', $f49f54);
           }
         }
 
@@ -11555,14 +11866,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $97a705 = exports.default || module.exports;
+        var $e5efff = exports.default || module.exports;
       
-      if (typeof $97a705 === 'function') {
-        $97a705 = $97a705.options;
+      if (typeof $e5efff === 'function') {
+        $e5efff = $e5efff.options;
       }
     
         /* template */
-        Object.assign($97a705, (function () {
+        Object.assign($e5efff, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11571,7 +11882,7 @@ exports.default = _default;
     _c(
       "div",
       {
-        staticClass: "card text-white bg-primary mb-3 ml-3 mt-5 mr-3 shadow",
+        staticClass: "card text-white bg-dark mb-3 ml-3 mt-5 mr-3 shadow",
         staticStyle: { "max-width": "22rem" }
       },
       [
@@ -11613,9 +11924,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$97a705', $97a705);
+            api.createRecord('$e5efff', $e5efff);
           } else {
-            api.reload('$97a705', $97a705);
+            api.reload('$e5efff', $e5efff);
           }
         }
 
@@ -11655,14 +11966,14 @@ var _default = {
   name: 'FormAddTask'
 };
 exports.default = _default;
-        var $ae2f35 = exports.default || module.exports;
+        var $368525 = exports.default || module.exports;
       
-      if (typeof $ae2f35 === 'function') {
-        $ae2f35 = $ae2f35.options;
+      if (typeof $368525 === 'function') {
+        $368525 = $368525.options;
       }
     
         /* template */
-        Object.assign($ae2f35, (function () {
+        Object.assign($368525, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11680,7 +11991,7 @@ exports.default = _default;
               _vm._v(" "),
               _c("input", {
                 staticClass: "form-control",
-                attrs: { type: "email", id: "titleTask" }
+                attrs: { type: "text", id: "titleTask" }
               })
             ]),
             _vm._v(" "),
@@ -11691,7 +12002,7 @@ exports.default = _default;
               _vm._v(" "),
               _c("input", {
                 staticClass: "form-control",
-                attrs: { type: "password", id: "descriptionTask" }
+                attrs: { type: "text", id: "descriptionTask" }
               })
             ]),
             _vm._v(" "),
@@ -11727,9 +12038,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$ae2f35', $ae2f35);
+            api.createRecord('$368525', $368525);
           } else {
-            api.reload('$ae2f35', $ae2f35);
+            api.reload('$368525', $368525);
           }
         }
 
@@ -11771,14 +12082,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $16c343 = exports.default || module.exports;
+        var $5cfd47 = exports.default || module.exports;
       
-      if (typeof $16c343 === 'function') {
-        $16c343 = $16c343.options;
+      if (typeof $5cfd47 === 'function') {
+        $5cfd47 = $5cfd47.options;
       }
     
         /* template */
-        Object.assign($16c343, (function () {
+        Object.assign($5cfd47, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11797,7 +12108,7 @@ exports.default = _default;
                 modifiers: { "modal-1": true }
               }
             ],
-            staticClass: "bg-primary mt-3 ml-3 shadow"
+            staticClass: "bg-dark mt-3 ml-3 shadow"
           },
           [
             _c("img", {
@@ -11833,9 +12144,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$16c343', $16c343);
+            api.createRecord('$5cfd47', $5cfd47);
           } else {
-            api.reload('$16c343', $16c343);
+            api.reload('$5cfd47', $5cfd47);
           }
         }
 
@@ -11879,25 +12190,39 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
 var _default = {
   name: 'DashboardPage',
+  data: function data() {
+    return {
+      currentPage: 'dashboardPage'
+    };
+  },
   props: ['tasksData', 'categoriesData'],
   components: {
     CardTask: _CardTask.default,
     Navbar: _Navbar.default,
     CardCategory: _CardCategory.default,
     ButtonAdd: _ButtonAdd.default
+  },
+  methods: {
+    logoutSubmit: function logoutSubmit(payload) {
+      localStorage.clear();
+      this.$emit("logoutSubmit", payload);
+    }
   }
 };
 exports.default = _default;
-        var $48cd4f = exports.default || module.exports;
+        var $75abe9 = exports.default || module.exports;
       
-      if (typeof $48cd4f === 'function') {
-        $48cd4f = $48cd4f.options;
+      if (typeof $75abe9 === 'function') {
+        $75abe9 = $75abe9.options;
       }
     
         /* template */
-        Object.assign($48cd4f, (function () {
+        Object.assign($75abe9, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -11905,7 +12230,9 @@ exports.default = _default;
   return _c(
     "div",
     [
-      _c("Navbar"),
+      _vm.currentPage !== "loginPage" || _vm.currentPage !== "registerPage"
+        ? _c("Navbar", { on: { logoutSubmit: _vm.logoutSubmit } })
+        : _vm._e(),
       _vm._v(" "),
       _c("ButtonAdd"),
       _vm._v(" "),
@@ -11944,9 +12271,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$48cd4f', $48cd4f);
+            api.createRecord('$75abe9', $75abe9);
           } else {
-            api.reload('$48cd4f', $48cd4f);
+            api.reload('$75abe9', $75abe9);
           }
         }
 
@@ -12110,14 +12437,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $655d89 = exports.default || module.exports;
+        var $187ff4 = exports.default || module.exports;
       
-      if (typeof $655d89 === 'function') {
-        $655d89 = $655d89.options;
+      if (typeof $187ff4 === 'function') {
+        $187ff4 = $187ff4.options;
       }
     
         /* template */
-        Object.assign($655d89, (function () {
+        Object.assign($187ff4, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -12162,9 +12489,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$655d89', $655d89);
+            api.createRecord('$187ff4', $187ff4);
           } else {
-            api.reload('$655d89', $655d89);
+            api.reload('$187ff4', $187ff4);
           }
         }
 
@@ -65130,7 +65457,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57682" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59560" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
